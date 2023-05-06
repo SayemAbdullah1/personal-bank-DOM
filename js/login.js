@@ -5,9 +5,9 @@ document.getElementById('button').addEventListener('click', function(){
     const passField = document.getElementById('pass')
     const pass = passField.value;
     if(email === 'sayem@gmail.com' && pass === '12345'){
-        console.log('Welcome')
+        window.location.href = 'bank.html'
     }else{
-        console.log('Invalid user')
+        alert('Invalid user')
     }
     // console.log(email, pass)
 })
