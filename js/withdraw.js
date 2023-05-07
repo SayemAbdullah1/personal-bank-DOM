@@ -10,7 +10,14 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
 
     const totalWithdraw = preWithdrawElement + newWithDraw;
     withdrawTotalelement.innerText = totalWithdraw;
-    console.log(totalWithdraw)
-    // withdrawTotalelement.innerText = withdrawAmount;
+    
+    const preWithTotal = document.getElementById('total-balance')
+    const preTotal = preWithTotal.innerText
+    const preTotalElement = parseFloat(preTotal)
+
+    const totalWith = preTotalElement - totalWithdraw;
+    preWithTotal.innerText = totalWith;
+    
+
     withdraw.value = '';
 })
